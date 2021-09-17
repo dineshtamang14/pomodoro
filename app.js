@@ -11,12 +11,13 @@ const longBreakTime = 15;
 
 let timeDisplay = document.getElementById("time-display");
 
+// TODO FOR WORK BUTTON
+
 $("#work-btn").click(function(){
     work(workTime);
 });
 
-
-const work =  function(count){
+function work(count){
     let count_min = Math.floor(count / 60);
     let count_sec = count % 60;
     if (count_sec < 10){
@@ -29,3 +30,19 @@ const work =  function(count){
 
     timeDisplay.innerHTML = `${count_min}:${count_sec}`;
 }
+
+
+// TODO FOR SHORT BREAK 
+$("#short-break-btn").click(function(){
+    work(workTime);
+});
+
+function shortBrak(){
+
+}
+
+
+// TODO FOR LONG BREAK 
+$("#long-break-btn").click(function(){
+    work(workTime);
+});
